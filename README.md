@@ -1,1 +1,1 @@
-# djlcp-producthunt
+producthunt
