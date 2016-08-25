@@ -16,15 +16,154 @@ GENERAL
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "proxima-nova", "Proxima Nova", "Proxima Nova Regular", helvetica, arial, sans-serif;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+.header-wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 5%;
+	height: 110px;
 }
 
 .content-wrap {
-  max-width 940px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 0 5%;
 }
 
 a {
   text-decoration: none;
+}
+
+
+/****************************
+HEADER
+****************************/
+
+
+.main-header {
+	-webkit-box-shadow: 0 3px 2px -2px lightgray;
+	-moz-box-shadow: 0 3px 2px -2px lightgray;
+	box-shadow: 0 3px 2px -2px lightgray;
+  margin: 0 0 30px 0;
+  padding: 0 0 0 0;
+  width: 100%;
+	height: 100px;
+	background-color: #FFF;
+}
+
+
+.logo {
+	display: block;
+	position: absolute;
+	right: 1135px;
+	top: -1px;
+	width: 42px;
+	height: 42px;
+	margin: 4px 4px 0 0;
+}
+	i {
+	display: inline;
+	color: #999;
+}
+
+.search-form {
+	display: block;
+	position: relative;
+	left: 35px;
+	top: 10px;
+  flex-grow: 1;
+  min-width: 18rem;
+	display: inline;
+	font-size: 0.85em;
+}
+
+.search-bar {
+	display: block;
+	height: 30px;
+  width: 85%;
+  padding: .4rem;
+	padding-left: 30px;
+  background-color: #FFF;
+	display: inline;
+	border: 1px solid #F2F2F2;
+}
+
+.search-bar:focus {
+	outline: none;
+}
+
+.dropdown-tabs {
+	display: inline-block;
+	position: relative;
+	left: 50px;
+	top: 10px;
+	font-weight: 900;
+	font-size: 20px;
+	color: #999;
+	vertical-align: center;
+}
+
+a.dropdown-tabs:hover {
+	color: #DA552F;
+}
+
+
+.login-button {
+	display: inline-block;
+	position: relative;
+	left: 60px;
+	top:10px;
+	font-weight: 900;
+	font-size: 13px;
+	color: #999;
+	text-transform: uppercase;
+	vertical-align: center;
+}
+
+a.login-button:hover {
+	color: #DA552F;
+}
+
+
+/****************************
+NAVIGATION
+****************************/
+
+.main-nav {
+	width: 1050px;
+	margin: 20px 0 0 0;
+	display: inline-block;
+	border-top: 1px solid #E3E3E3;
+
+}
+
+.main-nav__link {
+	display: inline-block;
+	margin: 0 0 10px 0;
+	height: 50px;
+	padding: 0 20px;
+	font-size: .9em;
+	color: #999;
+}
+
+a.main-nav__link:hover {
+	background-color: #F2F2F2;
+	color: #000000;
+}
+
+.main-nav__link-arrows {
+	width: 5px;
+	margin: 0 5px;
+}
+
+.main-nav__link-active {
+	display: inline-block;
+	color: #000;
+	background-color: #F2F2F2;
+	height: 50px;
+	padding: 0 20px;
 }
