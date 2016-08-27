@@ -19,17 +19,18 @@ body {
   font-family: "proxima-nova", "Proxima Nova", "Proxima Nova Regular", helvetica, arial, sans-serif;
 	margin: 0 auto;
 	padding: 0px;
+	background-color: #F9F9F9;
 }
 
 .header-wrap {
-  max-width: 1180px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 5%;
 	height: 110px;
 }
 
 .content-wrap {
-  max-width: 1180px;
+  max-width: 94%;
   margin: 0 auto;
   padding: 0 5%;
 }
@@ -37,6 +38,7 @@ body {
 a {
   text-decoration: none;
 }
+
 
 
 /****************************
@@ -65,31 +67,35 @@ HEADER
 	height: 42px;
 	margin: 4px 4px 0 0;
 }
-	i {
-	display: inline;
-	color: #999;
+
+.fa-search {
+	z-index: 1000;
+	position: absolute;
+	right: 1111px;
+	top: 16px;
+	color: #D0D0D0;
+	font-size: 1.1em;
+	font-weight: lighter;
 }
 
 .search-form {
 	display: block;
-	position: relative;
-	left: 35px;
-	top: 10px;
   flex-grow: 1;
   min-width: 18rem;
 	display: inline;
-	font-size: 0.85em;
 }
 
 .search-bar {
-	display: block;
-	height: 30px;
-  width: 85%;
-  padding: .4rem;
-	padding-left: 30px;
-  background-color: #FFF;
 	display: inline;
+	height: 30px;
+  width: 88.5%;
+	margin: 11px 0 0 40px;
+  padding: .4rem;
+	padding-left: 33px;
+  background-color: #FFF;
 	border: 1px solid #F2F2F2;
+	font-size: 0.85em;
+	color: #999;
 }
 
 .search-bar:focus {
@@ -97,14 +103,13 @@ HEADER
 }
 
 .dropdown-tabs {
-	display: inline-block;
-	position: relative;
-	left: 50px;
-	top: 10px;
+	display: inline;
+	margin: 10px 5px 0 10px;
 	font-weight: 900;
-	font-size: 20px;
+	font-size: 1.2em;
 	color: #999;
 	vertical-align: center;
+	letter-spacing: .1em;
 }
 
 a.dropdown-tabs:hover {
@@ -113,12 +118,10 @@ a.dropdown-tabs:hover {
 
 
 .login-button {
-	display: inline-block;
-	position: relative;
-	left: 60px;
-	top:10px;
+	display: inline;
+	margin: 15px 0 0 0;
 	font-weight: 900;
-	font-size: 13px;
+	font-size: 0.75em;
 	color: #999;
 	text-transform: uppercase;
 	vertical-align: center;
@@ -134,36 +137,74 @@ NAVIGATION
 ****************************/
 
 .main-nav {
-	width: 1050px;
-	margin: 20px 0 0 0;
-	display: inline-block;
+	width: 100%;
+	margin: 9px 0 0 0;
+	display: flex;
+	height: 50px;
 	border-top: 1px solid #E3E3E3;
-
 }
 
 .main-nav__link {
 	display: inline-block;
-	margin: 0 0 10px 0;
-	height: 50px;
+	min-width: 70px
+	flex: 0 0 auto;
+	margin: 0 0 15px 0;
+	height: 49px;
 	padding: 0 20px;
 	font-size: .9em;
 	color: #999;
 }
 
-a.main-nav__link:hover {
-	background-color: #F2F2F2;
-	color: #000000;
+.main-nav__link-text {
+	margin: 18px 0 0 0;
 }
 
-.main-nav__link-arrows {
+a.main-nav__link:hover {
+	background-color: #F9F9F9;
+}
+
+/*.main-nav__link-arrows {
+	display: inline-block;
 	width: 5px;
 	margin: 0 5px;
-}
+	color: #999;
+	border-top: 1px solid #E3E3E3;
+}*/
 
 .main-nav__link-active {
 	display: inline-block;
 	color: #000;
 	background-color: #F2F2F2;
-	height: 50px;
+	height: 49px;
 	padding: 0 20px;
+	margin-right: 0;
+	font-size: .9em;
+}
+
+
+
+/***************************
+CONTENT
+****************************/
+
+.link-wrap {
+	height: 100%;
+	width: 75%;
+	background-color: #FFF;
+	border: 1px solid #F2F2F2;
+}
+
+.section-title {
+	width: 95%;
+	margin: 0 0 15px 20px;
+	padding: 15px 0 15px 0px;
+	font-size: 1.2em;
+	font-weight: lighter;
+	border-bottom: 1px solid #E3E3E3;
+	text-align: left;
+}
+
+.product-image {
+	display: inline;
+	margin: 0 0 0 20px;
 }
