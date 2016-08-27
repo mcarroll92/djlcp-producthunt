@@ -23,14 +23,14 @@ body {
 }
 
 .header-wrap {
-  max-width: 1200px;
+  width: 66%;
   margin: 0 auto;
   padding: 0 5%;
 	height: 110px;
 }
 
 .content-wrap {
-  max-width: 94%;
+  width: 66%;
   margin: 0 auto;
   padding: 0 5%;
 }
@@ -47,9 +47,9 @@ HEADER
 
 
 .main-header {
-	-webkit-box-shadow: 0 3px 2px -2px lightgray;
-	-moz-box-shadow: 0 3px 2px -2px lightgray;
-	box-shadow: 0 3px 2px -2px lightgray;
+	-webkit-box-shadow: 0 3px 4px -4px gray;
+	-moz-box-shadow: 0 3px 4px -4px gray;
+	box-shadow: 0 3px 4px -4px gray;
   margin: 0 0 30px 0;
   padding: 0 0 0 0;
   width: 100%;
@@ -61,22 +61,26 @@ HEADER
 .logo {
 	display: block;
 	position: absolute;
-	right: 1135px;
-	top: -1px;
-	width: 42px;
-	height: 42px;
+	left: 21.5%;
+	top: 0.05%;
+	width: 43px;
+	height: 43px;
 	margin: 4px 4px 0 0;
 }
 
-.fa-search {
+/******
+UNUSED VERSION OF SEARCH-ICRON, REPLACED WITH BACKGROUND IMG IN .search-bar
+*******/
+
+/*.search-icon {
 	z-index: 1000;
 	position: absolute;
-	right: 1111px;
-	top: 16px;
+	left: 24.5%;
+	top: 1.95%;
 	color: #D0D0D0;
 	font-size: 1.1em;
 	font-weight: lighter;
-}
+}*/
 
 .search-form {
 	display: block;
@@ -86,15 +90,19 @@ HEADER
 }
 
 .search-bar {
+	background: url(../img/search-icon.png) no-repeat;
+	background-size: 15px;
+	background-position: 7px 7px;
 	display: inline;
 	height: 30px;
-  width: 88.5%;
+  width: 88%;
 	margin: 11px 0 0 40px;
   padding: .4rem;
-	padding-left: 33px;
+	padding-left: 30px;
   background-color: #FFF;
 	border: 1px solid #F2F2F2;
-	font-size: 0.85em;
+	font-size: 0.83em;
+	font-weight:500;
 	color: #999;
 }
 
@@ -141,17 +149,17 @@ NAVIGATION
 	margin: 9px 0 0 0;
 	display: flex;
 	height: 50px;
-	border-top: 1px solid #E3E3E3;
+	border-top: 1px solid #F2F2F2;
 }
 
 .main-nav__link {
 	display: inline-block;
-	min-width: 70px
+	min-width: 70px;
 	flex: 0 0 auto;
 	margin: 0 0 15px 0;
 	height: 49px;
 	padding: 0 20px;
-	font-size: .9em;
+	font-size: .85em;
 	color: #999;
 }
 
@@ -174,11 +182,11 @@ a.main-nav__link:hover {
 .main-nav__link-active {
 	display: inline-block;
 	color: #000;
-	background-color: #F2F2F2;
+	background-color: #F9F9F9;
 	height: 49px;
 	padding: 0 20px;
 	margin-right: 0;
-	font-size: .9em;
+	font-size: .85em;
 }
 
 
@@ -188,8 +196,9 @@ CONTENT
 ****************************/
 
 .link-wrap {
+	margin-top: 10px;
 	height: 100%;
-	width: 75%;
+	width: 74%;
 	background-color: #FFF;
 	border: 1px solid #F2F2F2;
 }
@@ -198,13 +207,42 @@ CONTENT
 	width: 95%;
 	margin: 0 0 15px 20px;
 	padding: 15px 0 15px 0px;
-	font-size: 1.2em;
+	font-size: 1.3em;
 	font-weight: lighter;
 	border-bottom: 1px solid #E3E3E3;
 	text-align: left;
 }
 
+/***************************
+PRODUCTS
+****************************/
+
+.product-link {
+	display: inline-block;
+	width: 100%;
+	height: 130px;
+	background: #fff;
+	border-bottom: 1px solid #E3E3E3;
+}
+
 .product-image {
 	display: inline;
-	margin: 0 0 0 20px;
+	height: 80px;
+	margin: 25px 0 0 25px;
+}
+
+.product-titles {
+	display: inline;
+	width: 100%;
+	height: 20px;
+	margin: 10px 0 0 30px;
+	padding: 15px 0 0 0px;
+	font-size: 1.3em;
+	font-weight: lighter;
+	text-align: left;
+}
+
+.product-description {
+	display: inline;
+	height:30px;
 }
