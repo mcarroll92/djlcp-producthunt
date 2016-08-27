@@ -23,14 +23,14 @@ body {
 }
 
 .header-wrap {
-  width: 66%;
+  width: 1180px;
   margin: 0 auto;
   padding: 0 5%;
 	height: 110px;
 }
 
 .content-wrap {
-  width: 66%;
+  width: 1180;
   margin: 0 auto;
   padding: 0 5%;
 }
@@ -55,21 +55,24 @@ HEADER
   width: 100%;
 	height: 100px;
 	background-color: #FFF;
+	display: flex;
+	align-content: center;
 }
 
 
 .logo {
-	display: block;
-	position: absolute;
+	/*display: flex;
+	align-items: flex-start;*/
+	/*position: absolute;
 	left: 21.5%;
-	top: 0.05%;
+	top: 0.05%;*/
 	width: 43px;
 	height: 43px;
 	margin: 4px 4px 0 0;
 }
 
 /******
-UNUSED VERSION OF SEARCH-ICRON, REPLACED WITH BACKGROUND IMG IN .search-bar
+UNUSED VERSION OF SEARCH-ICON, REPLACED WITH BACKGROUND IMG IN .search-bar
 *******/
 
 /*.search-icon {
@@ -83,7 +86,7 @@ UNUSED VERSION OF SEARCH-ICRON, REPLACED WITH BACKGROUND IMG IN .search-bar
 }*/
 
 .search-form {
-	display: block;
+	/*display: block;*/
   flex-grow: 1;
   min-width: 18rem;
 	display: inline;
@@ -93,10 +96,10 @@ UNUSED VERSION OF SEARCH-ICRON, REPLACED WITH BACKGROUND IMG IN .search-bar
 	background: url(../img/search-icon.png) no-repeat;
 	background-size: 15px;
 	background-position: 7px 7px;
-	display: inline;
+	/*display: inline;*/
 	height: 30px;
-  width: 88%;
-	margin: 11px 0 0 40px;
+  width: 87%;
+	/*margin: 11px 0 0 40px;*/
   padding: .4rem;
 	padding-left: 30px;
   background-color: #FFF;
@@ -111,7 +114,7 @@ UNUSED VERSION OF SEARCH-ICRON, REPLACED WITH BACKGROUND IMG IN .search-bar
 }
 
 .dropdown-tabs {
-	display: inline;
+	/*display: inline;*/
 	margin: 10px 5px 0 10px;
 	font-weight: 900;
 	font-size: 1.2em;
@@ -126,7 +129,7 @@ a.dropdown-tabs:hover {
 
 
 .login-button {
-	display: inline;
+	/*display: inline;*/
 	margin: 15px 0 0 0;
 	font-weight: 900;
 	font-size: 0.75em;
