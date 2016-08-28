@@ -29,7 +29,7 @@ body {
 .header-wrap {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 5%;
+  /*padding: 0 5%;*/
 	height: 110px;
 	display: flex;
 	flex-direction: row;
@@ -41,9 +41,9 @@ body {
 .content-wrap {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 5%;
+  /*padding: 0 5%;*/
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	flex-direction: row;
 	justify-content: space-between;
 }
@@ -118,6 +118,7 @@ UNUSED VERSION OF SEARCH-ICON, REPLACED WITH BACKGROUND IMG IN .search-bar
 	font-size: 0.83em;
 	font-weight:500;
 	color: #999;
+	border-radius: 3px;
 }
 
 .search-bar:focus {
@@ -127,7 +128,7 @@ UNUSED VERSION OF SEARCH-ICON, REPLACED WITH BACKGROUND IMG IN .search-bar
 .dropdown-tabs {
 	/*display: inline;*/
 	margin: 0 5px 0 10px;
-	font-weight: 800;
+	font-weight: 700;
 	font-size: 1em;
 	color: #999;
 	/*vertical-align: center;*/
@@ -209,13 +210,19 @@ a.main-nav__link:hover {
 CONTENT
 ****************************/
 
+.link-wrap {
+	max-width: 800px;
+	/*display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;*/
+}
+
 .h5-wrap {
-	width: 74%;
+	width: 100%;
 	background-color: #FFF;
 	border-top: 1px solid #F2F2F2;
   border-left: 1px solid #F2F2F2;
 	border-right: 1px solid #F2F2F2;
-
 }
 
 .section-title {
@@ -228,40 +235,57 @@ CONTENT
 	text-align: left;
 }
 
+
 /***************************
 PRODUCTS
 ****************************/
 
+.product-links {
+	width: 100%;
+}
+
 .product-link {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 	flex-wrap: nowrap;
-	align-items: center;
-	align-content: flex-start;
-
-	width: 74%;
-	height: 130px;
+	/*align-items: center;
+	align-content: flex-start;*/
+	width: 100%;
+	min-height: 130px;
 	background: #fff;
 	border-left: 1px solid #F2F2F2;
 	border-right: 1px solid #F2F2F2;
 	border-bottom: 1px solid #E3E3E3;
 	padding: 25px;
 }
+
 .product-link:hover {
 	background-color: lightblue;
+}
+
+.product-titles:hover {
+	background: lightblue;
 }
 
 .product-image {
 	display: inline;
 	height: 80px;
+	align-self: center;
+}
+
+.product-content__text {
+	display: inline-flex;
+	flex-flow: column nowrap;
+	align-content: flex-start;
+	/*background: #FFF;*/
+	max-width: 693px;
 }
 
 .product-titles {
 	display: inline;
-	width: 800px;
-	height: 20px;
-	margin: 10px 0 0 30px;
-	padding: 15px 0 0 0px;
+	width: 650px;
+	margin: 5px 0 0px 20px;
 	font-size: 1.3em;
 	font-weight: lighter;
 	text-align: left;
@@ -270,18 +294,119 @@ PRODUCTS
 
 .product-description {
 	display: inline;
-	height:30px;
+	width: 650px;
+	margin: 0 0 10px 20.5px;
+	font-size: 0.85em;
+	color: #999999;
+	text-align: left;
 }
-
 
 /***************************
 PRODUCTS
 ****************************/
 
+.product-buttons {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: flex-start;
+	background: lightgreen;
+	width: 95%;
+	height: 22px;
+	margin-left: 20px;
+}
+
+.upvote-button {
+	background: #FFF;
+	width: 34px;
+	height: 22px;
+	border-radius: 3px;
+	margin-right: 15px;
+	border: 1px solid #000;
+}
+
+.comment-button {
+	background: red;
+	min-width: 34px;
+	height: 22px;
+	border-radius: 3px;
+	margin-right: 15px;
+	padding: 4px 5px 5px 5px;
+	font-size: 0.7em;
+	text-align: center;
+	color: #999;
+	border: 1px solid #F2F2F2;
+}
+
+.save-button {
+	background: purple;
+	width: 50px;
+	height: 22px;
+	border-radius: 3px;
+	margin-right: 15px;
+	border: 1px solid #F2F2F2;
+}
+
+.share-button {
+	background: #FFF;
+	color: #999;
+	width: 22px;
+	height: 22px;
+	border-radius: 3px;
+	margin-right: 15px;
+	border: 1px solid #F2F2F2;
+	padding: 2px 2px 2px 3px;
+}
+
+
+.product-tag {
+	flex: 1;
+	background: violet;
+	max-width: 200px;
+	height: 22px;
+	border-radius: 3px;
+	margin: 0 0 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************
+SIDEBAR
+****************************/
+
+.sidebar {
+	background-color: lightblue;
+	width: 250px;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
 .sidebar__recommendation {
 	background-color: #FFF;
 	/*border: 1px solid #F2F2F2;*/
-	border: 1px solid #000;
-	width: 100px;
-	height: 150px;
+	border: 1px solid #F2F2F2;
+	width: 100%;
+	height: 186px;
+}
+
+.sidebar__chats {
+	border: 1px solid #F2F2F2;
+	background-color: #FFF;
+	margin-top: 20px;
+	width: 100%;
+	height: 100%;
 }
