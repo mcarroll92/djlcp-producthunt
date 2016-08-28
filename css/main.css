@@ -15,24 +15,37 @@ GENERAL
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: "proxima-nova", "Proxima Nova", "Proxima Nova Regular", helvetica, arial, sans-serif;
+	 src: url('fonts/proxima-nova-regular.otf');
+}
+
 body {
-  font-family: "proxima-nova", "Proxima Nova", "Proxima Nova Regular", helvetica, arial, sans-serif;
 	margin: 0 auto;
 	padding: 0px;
 	background-color: #F9F9F9;
 }
 
 .header-wrap {
-  width: 1180px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 5%;
 	height: 110px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: flex-start;
 }
 
 .content-wrap {
-  width: 1180;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 5%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 a {
@@ -53,10 +66,8 @@ HEADER
   margin: 0 0 30px 0;
   padding: 0 0 0 0;
   width: 100%;
-	height: 100px;
+	height: 101px;
 	background-color: #FFF;
-	display: flex;
-	align-content: center;
 }
 
 
@@ -96,10 +107,10 @@ UNUSED VERSION OF SEARCH-ICON, REPLACED WITH BACKGROUND IMG IN .search-bar
 	background: url(../img/search-icon.png) no-repeat;
 	background-size: 15px;
 	background-position: 7px 7px;
-	/*display: inline;*/
+	display: inline-block;
 	height: 30px;
-  width: 87%;
-	/*margin: 11px 0 0 40px;*/
+  width: 100%;
+	/*margin: 11px 0 0 0;*/
   padding: .4rem;
 	padding-left: 30px;
   background-color: #FFF;
@@ -115,11 +126,11 @@ UNUSED VERSION OF SEARCH-ICON, REPLACED WITH BACKGROUND IMG IN .search-bar
 
 .dropdown-tabs {
 	/*display: inline;*/
-	margin: 10px 5px 0 10px;
-	font-weight: 900;
-	font-size: 1.2em;
+	margin: 0 5px 0 10px;
+	font-weight: 800;
+	font-size: 1em;
 	color: #999;
-	vertical-align: center;
+	/*vertical-align: center;*/
 	letter-spacing: .1em;
 }
 
@@ -130,12 +141,12 @@ a.dropdown-tabs:hover {
 
 .login-button {
 	/*display: inline;*/
-	margin: 15px 0 0 0;
-	font-weight: 900;
-	font-size: 0.75em;
+	margin: 5px 0 0 0;
+	font-weight: 700;
+	font-size: 0.7em;
 	color: #999;
 	text-transform: uppercase;
-	vertical-align: center;
+	/*vertical-align: center;*/
 }
 
 a.login-button:hover {
@@ -149,7 +160,7 @@ NAVIGATION
 
 .main-nav {
 	width: 100%;
-	margin: 9px 0 0 0;
+	margin: 0 0 0 0;
 	display: flex;
 	height: 50px;
 	border-top: 1px solid #F2F2F2;
@@ -198,17 +209,18 @@ a.main-nav__link:hover {
 CONTENT
 ****************************/
 
-.link-wrap {
-	margin-top: 10px;
-	height: 100%;
+.h5-wrap {
 	width: 74%;
 	background-color: #FFF;
-	border: 1px solid #F2F2F2;
+	border-top: 1px solid #F2F2F2;
+  border-left: 1px solid #F2F2F2;
+	border-right: 1px solid #F2F2F2;
+
 }
 
 .section-title {
 	width: 95%;
-	margin: 0 0 15px 20px;
+	margin: 0 0 0 20px;
 	padding: 15px 0 15px 0px;
 	font-size: 1.3em;
 	font-weight: lighter;
@@ -221,31 +233,55 @@ PRODUCTS
 ****************************/
 
 .product-link {
-	display: inline-block;
-	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	align-content: flex-start;
+
+	width: 74%;
 	height: 130px;
 	background: #fff;
+	border-left: 1px solid #F2F2F2;
+	border-right: 1px solid #F2F2F2;
 	border-bottom: 1px solid #E3E3E3;
+	padding: 25px;
+}
+.product-link:hover {
+	background-color: lightblue;
 }
 
 .product-image {
 	display: inline;
 	height: 80px;
-	margin: 25px 0 0 25px;
 }
 
 .product-titles {
 	display: inline;
-	width: 100%;
+	width: 800px;
 	height: 20px;
 	margin: 10px 0 0 30px;
 	padding: 15px 0 0 0px;
 	font-size: 1.3em;
 	font-weight: lighter;
 	text-align: left;
+	color: #4D4D4D;
 }
 
 .product-description {
 	display: inline;
 	height:30px;
+}
+
+
+/***************************
+PRODUCTS
+****************************/
+
+.sidebar__recommendation {
+	background-color: #FFF;
+	/*border: 1px solid #F2F2F2;*/
+	border: 1px solid #000;
+	width: 100px;
+	height: 150px;
 }
