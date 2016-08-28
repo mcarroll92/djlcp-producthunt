@@ -1,0 +1,17 @@
+@media screen and (min-width: 1000px) {
+  .header-wrap {
+    width: 1070px;
+  }
+
+  .content-wrap {
+    width: 1070px;
+  }
+
+  /*.product-link {
+    width: 80%;
+  }*/
+
+  /*.h5-wrap {
+    width: 80%;
+  }*/
+}
