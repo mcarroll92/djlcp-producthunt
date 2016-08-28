@@ -261,12 +261,10 @@ PRODUCTS
 }
 
 .product-link:hover {
-	background-color: lightblue;
+	background-color: #F2F2F2;
 }
 
-.product-titles:hover {
-	background: lightblue;
-}
+
 
 .product-image {
 	display: inline;
@@ -295,7 +293,7 @@ PRODUCTS
 .product-description {
 	display: inline;
 	width: 650px;
-	margin: 0 0 10px 20.5px;
+	margin: 5px 0 10px 20.5px;
 	font-size: 0.85em;
 	color: #999999;
 	text-align: left;
@@ -309,28 +307,33 @@ PRODUCTS
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: flex-start;
-	background: lightgreen;
 	width: 95%;
 	height: 22px;
 	margin-left: 20px;
 }
 
 .upvote-button {
-	background: #FFF;
+	background: url(../img/ph-upvote.png) no-repeat;
+	background-size: 8px;
+	background-position: 4px 6px;
+	background-color: #FFF;
 	width: 34px;
 	height: 22px;
 	border-radius: 3px;
 	margin-right: 15px;
-	border: 1px solid #000;
+	border: 1px solid #F2F2F2;
 }
 
 .comment-button {
-	background: red;
+	background: url(../img/ph-commenticon.png) no-repeat;
+	background-size: 12px;
+	background-position: 4px 5px;
+	background-color: #FFF;
 	min-width: 34px;
 	height: 22px;
 	border-radius: 3px;
 	margin-right: 15px;
-	padding: 4px 5px 5px 5px;
+	padding: 4px 5px 5px 18px;
 	font-size: 0.7em;
 	text-align: center;
 	color: #999;
@@ -338,16 +341,26 @@ PRODUCTS
 }
 
 .save-button {
-	background: purple;
-	width: 50px;
+	background: url(../img/ph-saveicon.png) no-repeat;
+	background-size: 15px;
+	background-position: 2px 6px;
+	background-color: #FFF;
+	min-width: 50px;
 	height: 22px;
 	border-radius: 3px;
 	margin-right: 15px;
 	border: 1px solid #F2F2F2;
+	text-transform: uppercase;
+	padding: 3px 5px 0px 18px;
+	color: #999;
+	font-size: 0.8em;
 }
 
 .share-button {
-	background: #FFF;
+	background: url(../img/ph-shareicon.png) no-repeat;
+	background-size: 15px;
+	background-position: center;
+	background-color: #FFF;
 	color: #999;
 	width: 22px;
 	height: 22px;
@@ -359,12 +372,17 @@ PRODUCTS
 
 
 .product-tag {
-	flex: 1;
-	background: violet;
+	background: #E2E2E2;
 	max-width: 200px;
 	height: 22px;
 	border-radius: 3px;
-	margin: 0 0 0 auto;
+	margin: 0 -15px 0 auto;
+	padding: 3px 5px 5px 5px;
+	border: 1px solid #E2E2E2;
+	text-transform: uppercase;
+	color: #000;
+	font-size: 0.75em;
+	font-weight: 500;
 }
 
 
