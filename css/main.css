@@ -1,6 +1,10 @@
 /****************************
-Colours:
-
+Colours -
+Orange: #DA552F
+Background: #F9F9F9
+Borders: #F2F2F2
+Light Gray Text: #999999
+Product Borders: #E3E3E3
 
 ****************************/
 
@@ -228,8 +232,8 @@ CONTENT
 .section-title {
 	width: 95%;
 	margin: 0 0 0 20px;
-	padding: 15px 0 15px 0px;
-	font-size: 1.3em;
+	padding: 20px 0 15px 0px;
+	font-size: 1.2em;
 	font-weight: lighter;
 	border-bottom: 1px solid #E3E3E3;
 	text-align: left;
@@ -327,13 +331,13 @@ PRODUCTS
 .comment-button {
 	background: url(../img/ph-commenticon.png) no-repeat;
 	background-size: 12px;
-	background-position: 4px 5px;
+	background-position: 5px 5px;
 	background-color: #FFF;
 	min-width: 34px;
 	height: 22px;
 	border-radius: 3px;
 	margin-right: 15px;
-	padding: 4px 5px 5px 18px;
+	padding: 5px 5px 5px 20px;
 	font-size: 0.7em;
 	text-align: center;
 	color: #999;
@@ -343,7 +347,7 @@ PRODUCTS
 .save-button {
 	background: url(../img/ph-saveicon.png) no-repeat;
 	background-size: 15px;
-	background-position: 2px 6px;
+	background-position: 4px 6px;
 	background-color: #FFF;
 	min-width: 50px;
 	height: 22px;
@@ -351,14 +355,14 @@ PRODUCTS
 	margin-right: 15px;
 	border: 1px solid #F2F2F2;
 	text-transform: uppercase;
-	padding: 3px 5px 0px 18px;
+	padding: 5px 5px 0px 22px;
 	color: #999;
-	font-size: 0.8em;
+	font-size: 0.75em;
 }
 
 .share-button {
 	background: url(../img/ph-shareicon.png) no-repeat;
-	background-size: 15px;
+	background-size: 10px;
 	background-position: center;
 	background-color: #FFF;
 	color: #999;
@@ -372,13 +376,13 @@ PRODUCTS
 
 
 .product-tag {
-	background: #E2E2E2;
+	background: #F2F2F2;
 	max-width: 200px;
 	height: 22px;
 	border-radius: 3px;
 	margin: 0 -15px 0 auto;
-	padding: 3px 5px 5px 5px;
-	border: 1px solid #E2E2E2;
+	padding: 5px 5px 5px 5px;
+	border: 1px solid #F2F2F2;
 	text-transform: uppercase;
 	color: #000;
 	font-size: 0.75em;
@@ -388,32 +392,17 @@ PRODUCTS
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /***************************
 SIDEBAR
 ****************************/
 
 .sidebar {
-	background-color: lightblue;
 	width: 250px;
 	display: flex;
 	flex-flow: column nowrap;
 }
 
-.sidebar__recommendation {
+.sidebar-recommendation {
 	background-color: #FFF;
 	/*border: 1px solid #F2F2F2;*/
 	border: 1px solid #F2F2F2;
@@ -421,10 +410,169 @@ SIDEBAR
 	height: 186px;
 }
 
-.sidebar__chats {
+
+.sidebar-recommendation__title {
+	width: 95%;
+	margin: 0 0 0 20px;
+	padding: 25px 0 0px 0px;
+	font-size: 1.15em;
+	font-weight: lighter;
+	text-align: left;
+	letter-spacing: 0.5px;
+}
+
+.sidebar-recommendation__description {
+	width: 80%;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	font-size: 0.825em;
+	color: #999999;
+	text-align: left;
+	line-height: 17px;
+	letter-spacing: 0.25px;
+}
+
+.sidebar-recommendation__button {
+	display: flex;
+	flex-flow: row nowrap;
+	background: #DA552F;
+	border-radius: 3px;
+	width: 85%;
+	height: 34px;
+	color: #FFF;
+	font-size: 0.825em;
+	margin-left: 18px;
+	margin-bottom: 30px;
+	border: 3px solid #DA552F;
+}
+
+.sidebar-recommendation__button:hover {
+	background: #EA532A;
+	border: 3px solid #EA532A;
+}
+
+.fa-slack {
+	margin-top: 6px;
+	margin-left: 15px;
+	font-size: 1.25em;
+}
+
+.sidebar-button__text {
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 0.85em;
+	text-align: center;
+	margin: 9px 0 10px 8px;
+	font-weight: 700;
+	letter-spacing: 0.35px;
+}
+
+
+.sidebar-chats {
 	border: 1px solid #F2F2F2;
 	background-color: #FFF;
 	margin-top: 20px;
 	width: 100%;
-	height: 100%;
+	height: 575px;
+}
+
+.upcoming-chats {
+	width: 80%;
+	margin: 0 0 0 23px;
+	padding: 20px 0 15px 0px;
+	padding-top: 20px;
+	font-size: 0.675em;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #E3E3E3;
+	text-align: left;
+}
+
+.sidebar-chats__vips {
+	display: flex;
+	flex-flow: row nowrap;
+	padding: 0px 15px 0px 15px;
+	margin-top: 5px;
+}
+
+.vip-picture__link {
+	margin: 15px 0px 30px 10px;
+	height: 40px;
+}
+
+.vip-picture__image {
+	border-radius:25px;
+}
+
+.vip-info {
+	display: flex;
+	flex-flow: column wrap;
+	margin-left: 13px;
+	margin-top: 10px;
+}
+
+.vip-name {
+	font-size: 0.8em;
+	font-weight: 300;
+	letter-spacing: 0.5px;
+	margin-bottom: 0px
+}
+
+.vip-name__link {
+	font-size: 0.8em;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	margin-bottom: 0px;
+	color: #000;
+}
+
+.vip-name__link:hover {
+	text-decoration: underline;
+}
+
+.vip-description {
+	width: 91%;
+	word-wrap:break-word;
+	margin-top: 3px;
+	margin-bottom: 5px;
+	font-size: 0.85em;
+	font-weight: 500;
+	letter-spacing: 0.35px;
+	color: #999999;
+}
+
+.reminder-button {
+	background: #FFF;
+	width: 90px;
+	border-radius: 3px;
+	margin-right: 15px;
+	border: 1px solid #F2F2F2;
+	text-transform: uppercase;
+	padding: 6px 10px 5px 10px;
+	color: #000;
+	font-size: 0.7em;
+	letter-spacing: 0.35px;
+}
+
+.reminder-button:hover {
+	background: #F2F2F2;
+}
+
+.more-chats {
+	width: 80%;
+	margin: 25px 0 0 23px;
+	padding: 20px 0 0 0;
+	font-size: 0.75em;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	border-top: 1px solid #E3E3E3;
+	text-align: center;
+	color: #DA552F;
+}
+
+.more-chats__link:hover {
+	text-decoration: underline;
+	color: #DA552F;
 }
