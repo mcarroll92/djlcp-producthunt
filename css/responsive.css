@@ -1,4 +1,4 @@
-@media screen and (min-width: 1000px) {
+@media (min-width: 600px) {
   .header-wrap {
     width: 1070px;
   }
@@ -7,11 +7,6 @@
     width: 1070px;
   }
 
-  /*.product-link {
-    width: 80%;
-  }*/
+  
 
-  /*.h5-wrap {
-    width: 80%;
-  }*/
 }
