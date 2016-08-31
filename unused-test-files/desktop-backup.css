@@ -13,17 +13,6 @@ Product Borders: #E3E3E3
 GENERAL
 ****************************/
 
-*, *:before, *:after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-@font-face {
-	font-family: "proxima-nova", "Proxima Nova", "Proxima Nova Regular", helvetica, arial, sans-serif;
-	 src: url('fonts/proxima-nova-regular.otf');
-}
-
 body {
 	margin: 0 auto;
 	padding: 0px;
@@ -33,7 +22,6 @@ body {
 .header-wrap {
   width: 1200px;
   margin: 0 auto;
-  /*padding: 0 5%;*/
 	height: 110px;
 	display: flex;
 	flex-direction: row;
@@ -45,7 +33,6 @@ body {
 .content-wrap {
   width: 1200px;
   margin: 0 auto;
-  /*padding: 0 5%;*/
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: row;
@@ -76,32 +63,12 @@ HEADER
 
 
 .logo {
-	/*display: flex;
-	align-items: flex-start;*/
-	/*position: absolute;
-	left: 21.5%;
-	top: 0.05%;*/
 	width: 43px;
 	height: 43px;
 	margin: 4px 4px 0 0;
 }
 
-/******
-UNUSED VERSION OF SEARCH-ICON, REPLACED WITH BACKGROUND IMG IN .search-bar
-*******/
-
-/*.search-icon {
-	z-index: 1000;
-	position: absolute;
-	left: 24.5%;
-	top: 1.95%;
-	color: #D0D0D0;
-	font-size: 1.1em;
-	font-weight: lighter;
-}*/
-
 .search-form {
-	/*display: block;*/
   flex-grow: 1;
   min-width: 18rem;
 	display: inline;
@@ -114,7 +81,6 @@ UNUSED VERSION OF SEARCH-ICON, REPLACED WITH BACKGROUND IMG IN .search-bar
 	display: inline-block;
 	height: 30px;
   width: 100%;
-	/*margin: 11px 0 0 0;*/
   padding: .4rem;
 	padding-left: 30px;
   background-color: #FFF;
@@ -130,12 +96,10 @@ UNUSED VERSION OF SEARCH-ICON, REPLACED WITH BACKGROUND IMG IN .search-bar
 }
 
 .dropdown-tabs {
-	/*display: inline;*/
 	margin: 0 5px 0 10px;
 	font-weight: 700;
 	font-size: 1em;
 	color: #999;
-	/*vertical-align: center;*/
 	letter-spacing: .1em;
 }
 
@@ -145,13 +109,11 @@ a.dropdown-tabs:hover {
 
 
 .login-button {
-	/*display: inline;*/
 	margin: 5px 0 0 0;
 	font-weight: 700;
 	font-size: 0.7em;
 	color: #999;
 	text-transform: uppercase;
-	/*vertical-align: center;*/
 }
 
 a.login-button:hover {
@@ -190,14 +152,6 @@ a.main-nav__link:hover {
 	background-color: #F9F9F9;
 }
 
-/*.main-nav__link-arrows {
-	display: inline-block;
-	width: 5px;
-	margin: 0 5px;
-	color: #999;
-	border-top: 1px solid #E3E3E3;
-}*/
-
 .main-nav__link-active {
 	display: inline-block;
 	color: #000;
@@ -216,9 +170,6 @@ CONTENT
 
 .link-wrap {
 	max-width: 800px;
-	/*display: flex;
-	flex-flow: column wrap;
-	justify-content: space-around;*/
 }
 
 .h5-wrap {
@@ -253,8 +204,6 @@ PRODUCTS
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: nowrap;
-	/*align-items: center;
-	align-content: flex-start;*/
 	width: 100%;
 	min-height: 130px;
 	background: #fff;
@@ -277,7 +226,7 @@ PRODUCTS
 }
 
 .product-content__text {
-	display: inline-flex;
+	display: flex;
 	flex-flow: column nowrap;
 	align-content: flex-start;
 	/*background: #FFF;*/
