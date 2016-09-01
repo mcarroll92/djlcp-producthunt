@@ -907,7 +907,7 @@ DESKTOP LAYOUT
   	background-color: #FFF;
   	margin-top: 20px;
   	width: 100%;
-  	min-height: 630px;
+  	min-height: 575px;
 
   }
 
@@ -948,14 +948,15 @@ DESKTOP LAYOUT
   }
 
   .vip-name {
-  	font-size: 0.8em;
-  	font-weight: 300;
+  	/*font-size: 0.8em;
+  	font-weight: 400;*/
   	letter-spacing: 0.5px;
-  	margin-bottom: 0px
+  	margin-bottom: 0px;
+    margin-top: 0px;
   }
 
   .vip-name__link {
-  	font-size: 0.8em;
+  	font-size: 0.9em;
   	font-weight: 600;
   	letter-spacing: 0.5px;
   	margin-bottom: 0px;
@@ -996,7 +997,7 @@ DESKTOP LAYOUT
 
   .more-chats {
   	width: 80%;
-  	margin: 25px 0 0 23px;
+  	margin: 25px 0 20px 23px;
   	padding: 20px 0 0 0;
   	font-size: 0.75em;
   	font-weight: 500;
